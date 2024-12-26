@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <input type="text" id="task-input" placeholder="Enter a task...">
+        <select id="priority-select">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button id="add-btn">Add Task</button>
+
+        <!-- Priority Legend (Indicates task priority colors) -->
+        <div id="priority-legend">
+            <div>
+                <div class="color-box high"></div>
+                <span>High Priority</span>
+            </div>
+            <div>
+                <div class="color-box medium"></div>
+                <span>Medium Priority</span>
+            </div>
+            <div>
+                <div class="color-box low"></div>
+                <span>Low Priority</span>
+            </div>
+        </div>
+
+        <div>
+            <button id="all-btn" class="filter-btn">All</button>
+            <button id="active-btn" class="filter-btn">Active</button>
+            <button id="completed-btn" class="filter-btn">Completed</button>
+        </div>
+
+        <ul id="task-list"></ul>
+        <div id="task-count"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
